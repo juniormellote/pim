@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>//biblioteca de acentuação
 
 #define TRUE  1
 #define FALSE 0
@@ -38,6 +39,7 @@ bool doLogin(char user[], char password[]){
 }
 
 int main(){
+    setlocale(LC_ALL,"");//comando para acentuaçao 
     bool login;
     char user[25], password[50];
 
